@@ -1,0 +1,448 @@
+@media (max-width : 1620px) {
+	
+	.main_text{
+		padding: 100px 10%;
+	}
+	
+}
+
+@media (max-width : 1320px) {
+	
+	.main_title{
+		font-size: 60px;
+		line-height: 80px;
+	}
+	
+}
+
+@media (max-width : 1120px) {
+	
+	.leftmenu{
+		display: none;
+	}
+	
+	.toplogo_hh_social{
+		display: none;
+	}
+	
+	.bigmainticketbut{
+		display: none;
+	}
+	
+	.content_wide{
+		padding-left: 0;
+	}
+	
+	.topmenu{
+		display: block;
+	}
+	
+	.maindisplay{
+		height: auto;
+		min-height: auto;
+		max-height: inherit;
+	}
+	
+	.toplogo_hh_case{
+		position: relative;
+		top: auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	
+	.mainlogo_case{
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 90%;
+		padding: 0 5%;
+		margin-bottom: 40px;
+	}
+	
+	.main_pic{
+		position: relative;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.main_pic_forani{
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	.maindate_case{
+		position: relative;
+		bottom: auto;
+		margin-bottom: 60px;
+	}
+	
+	.maindate_line{
+		height: 108px;
+	}
+	
+	.maindate_bigdate_case_reg{
+		display: block;
+		margin-left: 0;
+		line-height: 24px;
+	}
+	
+	.program_case{
+		height: auto;
+		margin-bottom: 50px;
+	}
+	
+	.program_case_text{
+		float: none;
+		width: 100%;
+	}
+	
+	.program_case_text.gorevert{
+		float: none;
+		width: 100%;
+	}
+	
+	.program_case_pic{
+		float: none;
+		width: 100%;
+		height: auto;
+		border-top: none;
+		margin-top: 30px;
+	}
+	
+	.program_case_pic.gorevert{
+		float: none;
+		width: 100%;
+	}
+	
+	.program_case_pic_forani{
+		display: none;
+	}
+	
+	.program_case_pic_forani_ad{
+		display: block;
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	.program_case_pic_forani_ad img{
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	.mcom_con_pic{
+		display: block;
+	}
+	
+	.mcom_con_pic_ani{
+		display: none;
+	}
+	
+	.video_case_pic{
+		display: block;
+	}
+	
+	.video_case_pic_ani{
+		display: none;
+	}
+	
+	.main_pic{
+		display: block;
+	}
+	
+	.main_pic_ani{
+		display: none;
+	}
+	
+	.program_case_pic_black{
+		position: relative;
+		float: none;
+		width: 100%;
+		border-top: none;
+	}
+
+	.mcom_con_pic{
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+	
+	.mcom_con_numbers{
+		margin: 30px 0px;
+	}
+	
+	.mcom_con_num{
+		float: none;
+		line-height: 50px;
+		margin-bottom: 10px;
+	}
+	
+	.mcom_con_ex{
+		float: none;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.technopolis_case{
+		padding-top: 10px;
+	}
+	
+	.technopolis_photos{
+		float: none;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.technopolis_text{
+		float: none;
+		width: 100%;
+		padding: 5%;
+		box-sizing: border-box;
+		margin-left: 0;
+	}
+	
+	.map_ico{
+		margin-bottom: 20px;
+	}
+	
+	.tickets_case_tblocks_1{
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.tickets_case_tblocks_2{
+		float: none;
+		width: 100%;
+	}
+	
+	.tickets_case_price_block{
+		height: auto;
+	}
+	
+	.tickets_case_price_block_nums{
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		padding-top: 0;
+		margin-bottom: 50px;
+	}
+	
+	.tickets_case_price_block_corp{
+		float: none;
+		width: 100%;
+	}
+	
+	.video_case_text{
+		padding-left: 5%;
+	}
+	
+	.video_case_pic{
+		position: relative;
+		top: auto;
+		left: auto;
+		margin-left: 5%;
+		margin-top: 40px;
+		width: 90%;
+		z-index: 10;
+	}
+	
+	.speakers_block{
+		width: 90%;
+	}
+	
+	.video_block{
+		margin-top: 60px;
+	}
+	
+	.video_block_ytt{
+		width: 560px;
+		height: 315px;
+	}
+	
+}
+
+@media (max-width : 890px) {
+	
+	.footer_contacts_case{
+		float: none;
+		width: 100%;
+	}
+	
+	.footer_hashtext{
+		width: 80%;
+	}
+	
+	.org_case{
+		padding: 140px 5%;
+	}
+	
+	.org_case_line{
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	.org_case_block_logo{
+		float: none;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.org_case_block_text{
+		float: none;
+		width: 100%;
+	}
+	
+	.program_case_text_time{
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 20px;
+	}
+	
+	.program_case_title{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	
+	.main_title{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	
+	.program_pdf{
+		width: 280px;
+	}
+	
+	.big_title{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	
+	.technopolis_title{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	
+	.partners_case_title{
+		font-size: 24px;
+		line-height: 36px;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.tickets_case_price_block_nums{
+		border: none;
+	}
+	
+	.tickets_case_price_block_nums_one{
+		display: none;
+	}
+	
+	.tickets_case_price_block_at{
+		display: block;
+	}
+	
+	.tickets_contacts a{
+		font-size: 24px;
+		line-height: 40px;
+	}
+	
+	.tickets_case_howmuch{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	
+	.video_case_price_sub{
+		width: 100%;
+	}
+	
+	.partners_case_pred{
+		padding: 40px;
+		padding-left: 40px;
+		padding-top: 100px;
+		line-height: 26px;
+	}
+
+	.partners_case_pred_logo{
+		position: absolute;
+		top: 20px;
+		left: auto;
+		right: 20px;
+		width: 100px;
+	}
+	
+	.video_block_ytt{
+		width: 400px;
+		height: 225px;
+	}
+	
+}
+
+@media (max-width : 360px) {
+	
+	.org_case_block_title{
+		font-size: 26px;
+		line-height: 40px;
+		margin-bottom: 30px;
+	}
+	
+	.program_pdf{
+		width: 240px;
+	}
+	
+	.program_pdf_360{
+		display: none;
+	}
+	
+	.main_title{
+		font-size: 40px;
+		line-height: 60px;
+	}
+	
+	.video_block_ytt{
+		width: 260px;
+		height: 146px;
+	}
+	
+}
+
+/* -- HEIGHT -- */
+
+@media (max-height : 800px) {
+	
+	.leftmenu_a{
+		bottom: 55%;
+	}
+
+}
+
+@media (max-height : 680px) {
+	
+	.leftmenu_a{
+		display: none;
+	}
+	
+	.runet_tickets{
+		padding: 30px 10px;
+	}
+	
+	.speakers_block{
+		width: 100%;
+	}
+	
+}
