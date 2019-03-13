@@ -1,0 +1,802 @@
+<!doctype html>
+<html>
+<head>
+
+	
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, minimal-ui"/>
+	<meta charset="UTF-8">
+	<title>MCOM Foodtech 2019 :: 27 апреля 2019 :: Swissam / Санкт-Петербург / МКОМ Фудтех 2019</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<meta name="Author" CONTENT="Heads and Hands">
+	<meta name="keywords" content="MCOM Foodtech 2019, MCOM, m-commerce, e-commerce, conference, mcom, мком, мком москва, мком москва 2019">
+	<meta name="description" content="Первая бизнес-конференция о мобильном фудтехе. МКОМ Фудтех 2019.">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+	
+	<meta property="og:title" content="MCOM Foodtech 2019">
+	<meta property="og:description" content="Первая бизнес-конференция о мобильном фудтехе.">
+	<meta property="og:site_name" content="MCOM Foodtech 2019">
+	<meta property="og:url" content="https://mcomconf.ru/foodtech">
+	<meta property="og:image" content="https://mcomconf.ru/foodtech/fb.png">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="MCOM Foodtech 2019">
+	<meta property="twitter:description" content="Первая бизнес-конференция о мобильном фудтехе.">
+	<meta property="twitter:url" content="https://mcomconf.ru/foodtech">
+	<meta property="twitter:image" content="https://mcomconf.ru/foodtechtw.png">
+
+	<meta property="vk:image"  content="https://mcomconf.ru/foodtech/vk.png">
+	
+	<script src="js/j1.js"></script>
+	<script src="js/j2.js"></script>
+	
+	<script>
+
+        $(function(){
+            $(".menu_move_to").click(function(){
+                rel = $(this).attr("rel");
+                element = this
+                move_to = 0;
+                if(rel != ""){
+                    var offset = $("#" + rel).offset();
+                    move_to = offset.top;
+                }
+                $("html, body").stop().animate({
+                        scrollTop: move_to + "px"
+                    }, 1000 , function(){
+                        history.pushState(rel, $(element).text());
+                        window.location.hash = rel;
+                    });
+                return false;
+            });
+
+            $(window).scroll(function(){
+                    var items = Array();
+                    $(".mixxcontent .menu_move_to").each(function(i,e){
+                        items.push(e);
+                    }); 
+                    aaa = items.reverse();
+                    $(aaa).each(function(i1,e1){
+                        r1 = $(e1).attr("rel");
+                        if(r1 != ""){
+                            console.log($(aaa).text());
+                            os1 = $("#" + r1).offset();
+                            s1 = $(window).scrollTop();
+                            if(os1.top >= s1){
+                                $(aaa).removeClass("active");   
+                                $(e1).addClass("active");
+                            }
+                        }
+                    });
+            });
+        });
+
+    </script>
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '247974012732568');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=247974012732568&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+	
+	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-296997-hcvbD"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-296997-hcvbD" style="position:fixed; left:-999px;" alt=""/></noscript>
+	
+</head>
+<body>
+
+	<a href="#tickets" rel="tickets" class="bigmainticketbut font_med menu_move_to">
+		<div class="bigmainticketbut_text">КУПИТЬ БИЛЕТ</div>
+		<div class="bigmainticketbut_bg"></div>
+	</a>
+	
+	<div class="content_wide">
+		
+		<!--
+		<a href="https://handh.ru/workshop/foodtech" target="_blank" class="top_workshop font_med">
+			Бесплатный воркшоп по созданию и&nbsp;развитию фудтех-проектов от&nbsp;организатора MCOM&nbsp;Foodtech&nbsp;2019 |&nbsp;Подробнее&nbsp;&rarr;
+		</a>
+		-->
+		
+		<div class="topmenu">
+			<a href="https://www.youtube.com/channel/UCzAR99V_r75RT-09Aa5NE_w" class="topmenu_social" target="_blank"><img src="img/yt.svg"></a>
+			<a href="https://www.facebook.com/mcomconf/" class="topmenu_social" target="_blank"><img src="img/fb.svg"></a>
+			<a href="https://www.instagram.com/mcomconf/" class="topmenu_social" target="_blank"><img src="img/insta.svg"></a>
+			<a href="#tickets" rel="tickets" class="topmenu_button font_med menu_move_to">Билеты</a>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="maindisplay">
+			
+			<div class="toplogo_hh_case">
+				<div class="toplogo_hh_case_text">Организатор:</div>
+				<a href="https://handh.ru/" target="_blank" class="toplogo_hh_case_logo"><img src="img/logo_hh_top.svg"></a>
+				<div class="cle"></div>
+			</div>
+			
+			<div class="toplogo_hh_social">
+				<a href="https://www.youtube.com/channel/UCzAR99V_r75RT-09Aa5NE_w" target="_blank"><img src="img/yt.svg"></a>
+				<a href="https://www.facebook.com/mcomconf/" target="_blank"><img src="img/fb.svg"></a>
+				<a href="https://www.instagram.com/mcomconf/" target="_blank"><img src="img/insta.svg"></a>
+				<div class="cle"></div>
+			</div>
+			
+			<div class="mainlogo_case">
+				Первая бизнес-конференция<br>о&nbsp;мобильном фудтехе 
+				<img src="img/mcom_biglogo.svg">
+			</div>
+			
+			<div class="maindate_case">
+				<div class="maindate_line">
+					<div class="maindate_line_point"></div>
+				</div>
+				<div class="maindate_bigdate_case">
+					<div class="maindate_bigdate_case_date">
+						<span class="font_med">27 апреля '19</span><span class="maindate_bigdate_case_reg">Регистрация с 11:00</span>
+					</div>
+					<div class="maindate_bigdate_case_place">Swissam, Санкт-Петербург</div>
+				</div>
+				<div class="cle"></div>
+			</div>
+			
+			<div class="main_pic_ani">
+				<div class="main_pic_ani_inside">
+					<!--
+					<div class="main_num_0"><img src="img/main_num_0.svg"></div>
+					<div class="main_num_1"><img src="img/main_num_1.svg"></div>
+					<div class="main_num_2"><img src="img/main_num_2.svg"></div>
+					<div class="main_num_3"><img src="img/main_num_3.svg"></div>
+					<div class="main_num_4"><img src="img/main_num_4.svg"></div>
+					<div class="main_pack_1"><img src="img/main_pack_1.svg"></div>
+					<div class="main_item_1"><img src="img/main_item_1.svg"></div>
+					<div class="main_item_2"><img src="img/main_item_2.svg"></div>
+					<div class="main_item_3"><img src="img/main_item_3.svg"></div>
+					<div class="main_item_4"><img src="img/main_item_4.svg"></div>
+					<div class="main_pack_2"><img src="img/main_pack_2.svg"></div>
+					-->
+					<div class="ani_2_1"><img src="img/2_1.svg"></div>
+					<div class="ani_2_2"><img src="img/2_2.svg"></div>
+					<div class="ani_2_3"><img src="img/2_3.svg"></div>
+					<div class="ani_2_4"><img src="img/2_4.svg"></div>
+					<div class="ani_2_5"><img src="img/2_5.svg"></div>
+					<div class="ani_2_6"><img src="img/2_6.svg"></div>
+				</div>
+			</div>
+			
+			<div class="main_pic">
+				<div class="main_pic_forani"><img src="img/main_foodtech.svg"></div>
+			</div>
+			
+		</div>
+		
+		<div class="main_text block_can_appear" id="speakers">
+			<div class="main_title font_med">8&nbsp;спикеров.<br>8 успешных кейсов.</div>
+			Крупные маркетплейсы и&nbsp;успешные рестораторы расскажут о&nbsp;личном опыте и&nbsp;новых возможностях самого перспективного направления для развития — &laquo;мобильном фудтехе&raquo;.
+		</div>
+		
+		<div class="speakers_block">
+			<!--
+			<div class="speakers_case">
+				<div class="speakers_logo"><img src="img/speakers/hh.svg"></div>
+				<div class="speakers_photo"><img src="img/speakers/hh.jpg"></div>
+				<div class="speaker_name">Александр Семенов</div>
+				<div class="speaker_pos">CEO</div>
+			</div>
+			<div class="speakers_case">
+				<div class="speakers_logo"><img src="img/speakers/yandex.svg"></div>
+				<div class="speakers_photo"><img src="img/speakers/yandex.jpg"></div>
+				<div class="speaker_name">Мария Крот</div>
+				<div class="speaker_pos">Руководитель отдела по работе с&nbsp;ресторанами</div>
+			</div>
+			<div class="speakers_case">
+				<div class="speakers_logo"><img src="img/speakers/greenbox.png"></div>
+				<div class="speakers_photo"><img src="img/speakers/greenbox.jpg"></div>
+				<div class="speaker_name">Максим Яковлев</div>
+				<div class="speaker_pos">Основатель</div>
+			</div>
+			<div class="speakers_case">
+				<div class="speakers_logo"><img src="img/speakers/dp.png"></div>
+				<div class="speakers_photo"><img src="img/speakers/dp.jpg"></div>
+				<div class="speaker_name">Елена Иванова</div>
+				<div class="speaker_pos">CMO</div>
+			</div>
+			<div class="speakers_case">
+				<div class="speakers_logo"><img src="img/speakers/ne.svg"></div>
+				<div class="speakers_photo"><img src="img/speakers/step.jpg"></div>
+				<div class="speaker_name">Михаил Степанов</div>
+				<div class="speaker_pos">Сооснователь, Бренд-шеф. Рынок на&nbsp;горе, г. Владимир</div>
+			</div>
+			<div class="speakers_case">
+				<div class="speakers_logo"><img src="img/speakers/pfood.svg"></div>
+				<div class="speakers_photo"><img src="img/speakers/pfood.jpg"></div>
+				<div class="speaker_name">Филипп Башьян</div>
+				<div class="speaker_pos">Сооснователь</div>
+			</div>
+			<div class="speakers_case">
+				<div class="speakers_logo"><img src="img/speakers/ne.svg"></div>
+				<div class="speakers_photo"><img src="img/speakers/dood.jpg"></div>
+				<div class="speaker_name">Никита Дудинцев</div>
+				<div class="speaker_pos">Независимый эксперт по маркетингу</div>
+			</div>
+			-->
+			<div class="speakers_other">Пул спикеров в стадии формирования.</div>
+		</div>
+		<!--
+		<div style="width: 100%; height: 1px; background-color: rgba(0,0,0,0.1); margin-bottom: 100px;"></div>
+		<div class="cle"></div>
+		<div class="speakers_block">
+			<div class="partners_case_title font_med">Приглашенные эксперты</div>
+			<div style="height: 30px;"></div>
+			<div class="speakers_case">
+				<div class="speakers_logo"><img src="img/speakers/220.png"></div>
+				<div class="speakers_photo"><img src="img/speakers/220.jpg"></div>
+				<div class="speaker_name">Светлана Азоркина</div>
+				<div class="speaker_pos">Директор по продукту</div>
+			</div>
+			<div class="speakers_other">Пул экспертов продолжает формироваться.</div>
+		</div>-->
+		
+		<a href="mcom_foodtech_2019.pdf" class="program_pdf font_med" target="_blank" style="margin-bottom: 70px; margin-top: -30px;">Скачать программу PDF</a>
+		
+		<!--
+		<div class="program_case">
+			<div class="program_case_text">
+				<div class="program_case_text_time">11:00 – 12:30</div>
+				<div class="program_case_title font_med">Электроника</div>
+				Как эффективно продавать смартфоны, бытовую технику и&nbsp;ТВ приставки в&nbsp;мобильных каналах.
+				<div class="program_case_speakers">
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/mvideo.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Антон Володькин (М.Видео): Продажи бытовой техники в&nbsp;мобильных каналах.
+						</div>
+						<div class="cle"></div>
+					</div>
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/svyaznoy.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Руслан Крылов (Связной, Евросеть): Мобильная коммуникация объединенного бренда.
+						</div>
+						<div class="cle"></div>
+					</div>
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/samsung.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Алексей Павлык (ex-Samsung): Продажи на&nbsp;локальных рынках компаний-производителя.
+						</div>
+						<div class="cle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="program_case_pic">
+				<div class="program_case_pic_forani">
+					<div class="ani_4_1"><img src="img/4_1.svg"></div>
+					<div class="ani_4_2"><img src="img/4_2.svg"></div>
+					<div class="ani_4_3"><img src="img/4_3.svg"></div>
+					<div class="ani_4_4"><img src="img/4_4.svg"></div>
+				</div>
+				<div class="program_case_pic_forani_ad"><img src="img/4.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="program_case">
+			<div class="program_case_text gorevert">
+				<div class="program_case_text_time">12:30 – 13:30</div>
+				<div class="program_case_title font_med">Ритейл</div>
+				Как мобильные технологии повышают лояльность клиентов для&nbsp;ежедневных покупок.
+				<div class="program_case_speakers">
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/pandao1.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Глеб Бодячевский (Pandao): Дизайн на&nbsp;основе аналитики.
+						</div>
+						<div class="cle"></div>
+					</div>
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/tsum.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Андрей Чикунов (ЦУМ): Мобильная трансформация ЦУМа.
+						</div>
+						<div class="cle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="program_case_pic">
+				<div class="program_case_pic_forani">
+					<div class="ani_3_1"><img src="img/3_1.svg"></div>
+					<div class="ani_3_2"><img src="img/3_2.svg"></div>
+				</div>
+				<div class="program_case_pic_forani_ad"><img src="img/3.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="program_case">
+			<div class="program_case_text">
+				<div class="program_case_text_time">14:30 – 16:00</div>
+				<div class="program_case_title font_med">Еда</div>
+				Как создавать дополнительную ценность для гурманов с&nbsp;помощью мобильных технологий.
+				<div class="program_case_speakers">
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/step.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Михаил Степанов (Рынок на горе): Особенности запуска фудтех проектов в&nbsp;регионах.
+						</div>
+						<div class="cle"></div>
+					</div>
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/dp2.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Роман Чернявский (Domino's Pizza): Как с&nbsp;помощью приложения продавать больше пиццы.
+						</div>
+						<div class="cle"></div>
+					</div>
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/yandex.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Мария Крот (Яндекс.Еда): Под капотом Яндекс.Еды. Как устроены бизнес-процессы после нажатия кнопки &laquo;Заказать&raquo;.
+						</div>
+						<div class="cle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="program_case_pic">
+				<div class="program_case_pic_forani">
+					<div class="ani_2_1"><img src="img/2_1.svg"></div>
+					<div class="ani_2_2"><img src="img/2_2.svg"></div>
+					<div class="ani_2_3"><img src="img/2_3.svg"></div>
+					<div class="ani_2_4"><img src="img/2_4.svg"></div>
+					<div class="ani_2_5"><img src="img/2_5.svg"></div>
+					<div class="ani_2_6"><img src="img/2_6.svg"></div>
+				</div>
+				<div class="program_case_pic_forani_ad"><img src="img/2.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="program_case">
+			<div class="program_case_text gorevert">
+				<div class="program_case_text_time">16:30 – 17:30</div>
+				<div class="program_case_title font_med">Одежда</div>
+				Как грамотно построить маркетинг в&nbsp;мобильной среде для модной аудитории.
+				<div class="program_case_speakers">
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/mt.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Яков Пейсахзон (MyTarget): Стратегия продвижения магазинов одежды в&nbsp;онлайн.
+						</div>
+						<div class="cle"></div>
+					</div>
+					<div class="program_case_speaker">
+						<div class="program_case_speaker_photo">
+							<img src="img/speakers/befree2.jpg">
+						</div>
+						<div class="program_case_speaker_text">
+							Денис Кучеров (befree): Увеличение продаж модной одежды через приложение.
+						</div>
+						<div class="cle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="program_case_pic">
+				<div class="program_case_pic_forani">
+					<div class="ani_1_1"><img src="img/1_1.svg"></div>
+					<div class="ani_1_2"><img src="img/1_2.svg"></div>
+				</div>
+				<div class="program_case_pic_forani_ad"><img src="img/1.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		-->
+		
+		<div class="program_case_black" style="margin-top: 60px;">
+			<div class="program_case_text">
+				<div class="program_case_text_time">Special section</div>
+				<div class="program_case_title font_med font_orange">MCOM Conversations</div>
+				Спикеры конференции и&nbsp;приглашенные эксперты в&nbsp;формате открытой дискуссии обсудят актуальные вопросы:
+				<div style="font-size: 18px; line-height: 30px; margin-top: 20px;" class="font_med">Рестораны <span class="font_orange">VS</span> Маркетплейсы</div>
+				<div style="font-size: 18px; line-height: 30px;" class="font_med">Продажа еды через приложение</div>
+				<div style="font-size: 18px; line-height: 30px;" class="font_med">Цифровая трансформация</div>
+				<!--<div class="mcom_con_numbers font_med">
+					<div class="mcom_con_num font_orange">10</div> 
+					<div class="mcom_con_ex">вопросов</div>
+					<div class="mcom_con_num font_orange">10</div> 
+					<div class="mcom_con_ex">вопросов</div>
+					<div class="cle"></div>
+				</div>
+				Призы за&nbsp;лучшие вопросы из&nbsp;зала от&nbsp;партнеров и&nbsp;организаторов.-->
+			</div>
+			<div class="program_case_pic_black">
+				<div class="mcom_con_pic_ani">
+					<div class="mcom_con_1"><img src="img/mcom_con_1.svg"></div>
+					<div class="mcom_con_2"><img src="img/mcom_con_2.svg"></div>
+					<div class="mcom_con_3"><img src="img/mcom_con_3.svg"></div>
+				</div>
+				<div class="mcom_con_pic">
+					<img src="img/mcom_con.svg">
+				</div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="technopolis_case" id="technopolis">
+			<div class="technopolis_photos"></div>
+			<div class="technopolis_text">
+				<div class="technopolis_title font_med">Место: Swissam</div>
+				MCOM Foodtech 2019 пройдет в&nbsp;здании швейцарского института гостиничного, ресторанного дела и&nbsp;кулинарного искусства Swissam.
+				<br><br>
+				— Большой зал на 150 участников.
+				<br>
+				— Залы для мастер-классов на 30 участников.
+				<br>
+				— Комфортабельные кресла.
+				<br>
+				— Зоны отдыха и&nbsp;места для нетворкинга.
+				<br>
+				— Бодрящие кофе-брейки.
+				<div class="technopolis_mapcase">
+					<a href="https://yandex.ru/maps/-/CCa-iTLD" target="_blank" class="map_ico"><img src="img/map_ico.svg"></a>
+					<div class="technopolis_mapcase_adress">
+						<div class="technopolis_mapcase_adress_title">Адрес:</div>
+						Санкт-Петербург, пр.&nbsp;Динамо,&nbsp;д.2, лит.&nbsp;Б 
+						<!--<br>
+						<a href="go_mcom.pdf" target="_blank" class="go_sheme font_med">Схема проезда</a>-->
+					</div>
+					<div class="cle"></div>
+				</div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="video_block">
+			<div class="partners_case_title font_med font_white" style="margin-bottom: 60px !important;">Как это было в&nbsp;Москве</div>
+			<div class="partners_case_all">
+				<div class="video_block_yt">
+					<iframe class="video_block_ytt" src="https://www.youtube.com/embed/ueyPisHdG_g" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<!--<a href="#videocontent" rel="videocontent" class="program_pdf font_med menu_move_to">
+					Купить билет на Foodtech
+				</a>-->
+			</div>
+		</div>
+		
+		<div class="tickets_case" id="tickets">
+			<div class="tickets_case_title font_med">Билеты</div>
+			<div class="tickets_case_tblocks">
+				<div class="tickets_case_tblocks_1">
+					<div class="tickets_case_tblocks_title">Входной</div>
+					— Участие в конференции.<br>
+					— Участие в мастер-классах.<br>
+					— Нетворкинг с&nbsp;участниками и&nbsp;живое общение со&nbsp;спикерами.<br>
+					— Видеозаписи.<br>
+					— Раздаточные материалы.<br>
+					— Кофе-брейк.<br>
+					— Сюрпризы и подарки от&nbsp;партнеров.
+				</div>
+				<div class="tickets_case_tblocks_2">
+					<div class="tickets_case_tblocks_title">Стоимость:</div>
+					Для ресторанов — от&nbsp;7&nbsp;000&nbsp;р.<br>
+					Для студентов Swissam — от&nbsp;3&nbsp;000&nbsp;р.<br>
+					Для стартап-команд — от&nbsp;3&nbsp;000&nbsp;р.<br>
+					Агентства — от&nbsp;15&nbsp;000&nbsp;р.
+				</div>
+				<div class="cle"></div>
+			</div>
+			<!--
+			<div class="tickets_case_price_block">
+				<div class="tickets_case_price_block_nums">
+					<div class="tickets_case_tblocks_title">Стоимость</div>
+					<div class="tickets_case_price_block_at">до 31 декабря '18 — <span class="font_med">4&nbsp;000&nbsp;р.</span></div>
+					<div class="tickets_case_price_block_at">до 11 февраля '19— <span class="font_med">5&nbsp;000&nbsp;р.</span></div>
+					<div class="tickets_case_price_block_at" style="border:none;">в&nbsp;день конференции — <span class="font_med">5&nbsp;000&nbsp;р.</span></div>
+					<div>
+						<div class="tickets_case_price_block_nums_one">
+							до 31 декабря '18<br>&nbsp;
+							<div class="tickets_case_price_block_nums_one_p font_med">4&nbsp;000&nbsp;р.</div>
+							<div class="tickets_case_price_block_nums_one_cube"></div>
+						</div>
+						<div class="tickets_case_price_block_nums_one">
+							до 11 февраля '19<br>&nbsp;
+							<div class="tickets_case_price_block_nums_one_p font_med">4&nbsp;500&nbsp;р.</div>
+							<div class="tickets_case_price_block_nums_one_cube"></div>
+						</div>
+						<div class="tickets_case_price_block_nums_one goactive">
+							в&nbsp;день конференции<br>&nbsp;
+							<div class="tickets_case_price_block_nums_one_p font_med">5&nbsp;000&nbsp;р.</div>
+							<div class="tickets_case_price_block_nums_one_cube goactive"></div>
+						</div>
+						<div class="cle"></div>
+					</div>
+				</div>
+				<div class="tickets_case_price_block_corp">
+					<div class="tickets_case_price_block_corp_title">Групповые скидки</div>
+					<div class="tickets_case_price_block_corp_pro">
+						3 билета — <span class="font_med">10%</span>
+					</div>
+					<div class="tickets_case_price_block_corp_pro">
+						4 билета — <span class="font_med">15%</span>
+					</div>
+					<div class="tickets_case_price_block_corp_pro" style="border:none;">
+						от 5 билетов — <span class="font_med">20%</span>
+					</div>
+				</div>
+				<div class="cle"></div>
+			</div>
+			-->
+			<!--<div class="tickets_case_howmuch">В продаже 400&nbsp;билетов.</div>-->
+			<div class="runet_tickets" style="display: none;">
+				<!--
+				<script src="//runet-id.com/javascripts/widget.js" data-base-url="https://runet-id.com"></script>
+<div class="rid-widget" data-widget="registration" data-apikey="8etyfde24b"></div>
+-->
+				<img src="img/soldout.svg" style="width: 100%; height: auto;">
+			</div>
+			<a href="#videocontent" rel="videocontent" class="program_pdf font_med menu_move_to" style="margin-bottom: 50px; display: none;">
+				Все видеозаписи
+			</a>
+			<!--
+			<a href="mcom_tickets.pdf" class="program_pdf font_med" target="_blank" style="margin-bottom: 50px;">Инструкция по покупке</a>
+			-->
+			<div class="tickets_contacts">
+				По вопросам приобретения пишите на&nbsp;почту:
+				<a href="mailto:reg@mcomconf.ru" target="_blank" class="font_med">reg@mcomconf.ru</a>
+			</div>
+			<div style="width: 100%; height: 2px; background-color: #000; margin: 50px 0px;"></div>
+			<div>
+				<div class="tickets_case_howmuch" style="margin-bottom: 10px;">Будьте в&nbsp;курсе событий</div>
+				<div class="tickets_contacts" style="margin-bottom: 30px;">
+					Оставьте ваш e-mail, чтобы не пропустить важные новости от&nbsp;MCOM.
+				</div>
+				<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+				<style type="text/css">
+					#mc_embed_signup{background:auto; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+					/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+				</style>
+				<div id="mc_embed_signup">
+				<form action="https://mcomconf.us19.list-manage.com/subscribe/post?u=00e4ffcd896edcdb332be1e47&amp;id=4cd5e119b6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Введите ваш e-mail" required>
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_00e4ffcd896edcdb332be1e47_4cd5e119b6" tabindex="-1" value=""></div>
+					<div class="clear"><input type="submit" value="Подписаться" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					</div>
+				</form>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--
+		<div id="videocontent" class="video_case_black">
+			<div class="video_case_text">
+				<div class="video_case_title font_med">
+					Видеозаписи выступлений MCOM&nbsp;Moscow&nbsp;2019 и&nbsp;MCOM Conversations.
+				</div>
+				В комплекте: презентации всех спикеров.
+				<div class="video_case_price">
+					Стоимость:
+					<div class="video_case_price_num font_med">2&nbsp;500&nbsp;р.</div>
+				</div>
+				<a href="mailto:reg@mcomconf.ru" target="_blank" class="video_case_price_but font_med">Купить</a>
+				<div class="video_case_price_sub">
+					Оставьте ваши контактные данные, на&nbsp;которые мы&nbsp;сможем выслать ссылку с&nbsp;доступами к&nbsp;видео.
+				</div>
+			</div>
+			<div class="video_case_pic_ani">
+				<div class="video_1"><img src="img/video_1.svg"></div>
+				<div class="video_2"><img src="img/video_2.svg"></div>
+			</div>
+			<div class="video_case_pic">
+				<img src="img/video.svg">
+			</div>
+		</div>
+		-->
+		
+		<!--
+		<div class="partners_case" style="background-color: #f1f1f1;">
+			<div class="partners_case_title font_med" style="margin-bottom: 60px !important;">Спецпредложения от&nbsp;партнеров</div>
+			<div class="partners_case_all">
+				<div class="partners_case_pred">
+					<div class="partners_case_pred_logo"><img src="img/partners/gr.png"></div>
+					У вас 10 000+ подписчиков и вы не знаете, как монетизировать свою базу? Получите бесплатную консультацию от специалистов GetResponse, а также скидку 10% на корпоративный тариф  Enterprise. Предложение действительно до 28.02 включительно. 
+					<br><br>
+					Тариф Enterprise — это персональный менеджер и выделенные IP адреса. 
+					<br><br>
+					<a href="https://www.getresponse.ru/biznes/zakazat-demo" target="_blank" class="font_med">Подробности на сайте GetResponce</a>
+				</div>
+				<div class="partners_case_pred">
+					<div class="partners_case_pred_logo"><img src="img/partners/gomob.png"></div>
+					Агентство мобильного маркетинга предлагает 10% скидку на любые услуги или бесплатную консультацию. 
+					<br><br>
+					Услуги Go Mobile:
+					<br>
+					— Закупка трафика по любой модели оплаты и на любых источниках;
+					<br>
+					— Cвоя programmatic-платформа Go Mobile NET;
+					<br>
+					— Исследования рынка;
+					<br>
+					— Аудит мобильных приложений;
+					<br>
+					— Продакшн креативов;
+					<br>
+					— Influence-маркетинг;
+					<br>
+					— App Store Optimization.
+					<br><br>
+					<a href="https://gomobile.ru" target="_blank" class="font_med">Сайт Go Mobile</a>
+				</div>
+				<div class="partners_case_pred">
+					<div class="partners_case_pred_logo"><img src="img/partners/myt.png"></div>
+					myTarget приглашает 21 марта участников MCOM Moscow 2019 на бесплатный вебинар по таргетированной рекламе.
+					<br><br>
+					<a href="https://target.my.com/pro/events/webinar210319" target="_blank" class="font_med">Запись на вебинар</a>
+				</div>
+				<div class="partners_case_pred">
+					<div class="partners_case_pred_logo"><img src="img/partners/mast.png"></div>
+					Участник MCOM Moscow 2019, компания «Мастерская» предлагает персональные скидки каждому зарегистрировавшемуся на сайте на разработку фирменного стиля, мерча и анимированных баннеров. За более детальной информацией обращайтесь по почте или телефону. Обязательно уточните, что вы участник MCOM Moscow 2019.
+					<br><br>
+					<a href="https://mrmsk.com/web-banners/?utm_source=mcom" target="_blank" class="font_med">Подробности на сайте Мастерской</a>
+				</div>
+				<div class="partners_case_pred">
+					<div class="partners_case_pred_logo"><img src="img/partners/mbw.png"></div>
+					MY BRAND WALL дарит всем участникам конференции БЕСПЛАТНЫЙ МОНТАЖ и демонтаж конструкции пресс волл при покупке или аренде до конца весны (31 мая 2019г.). Просто назови промокод MCOM.
+					<br><br>
+					<a href="http://mybrandwall.ru/" target="_blank" class="font_med">Сайт MY BRAND WALL</a>
+				</div>
+				<div class="partners_case_pred">
+					<div class="partners_case_pred_logo"><img src="img/partners/grow.png"></div>
+					Всем участникам MCOM Moscow коворкинг GrowUp дарит скидку 30% по промокоду MCOM_GrowUp.
+Приходите поработать: уже заварен ароматный кофе, проведен высокоскоростной интернет и составлен календарь интересных мероприятий.
+GrowUp — сеть коворкингов в Москве, Питере и Казани, объединяющая на одной площадке стартап-команды, разработчиков, маркетологов и дизайнеров — все нужные люди уже здесь!
+					<br><br>
+					<a href="https://msk.growup-coworking.ru/" target="_blank" class="font_med">Сайт GrowUp</a>
+				</div>
+				<div class="partners_case_pred">
+					<div class="partners_case_pred_logo"><img src="img/partners/nt.png"></div>
+					Наш digital-партнер Nominal Techno — международная IT-компания с собственным стеком технологий NT DSP и NT DMP уже более 7 лет запускает Programmatic-рекламу на рынке Беларуси, России, Украины и зарубежья. 
+					<br><br>
+До конца марта всем участникам конференции NT дарит скидку 15% на запуск рекламной кампании на своей Programmatic-платформе. 
+Попробуйте автоматизированную programmatic-рекламу и начните весну с увеличения продаж!
+					<br><br>
+					<a href="https://nominaltechno.ru/blog/mcom-2019?utm_source=mcom&utm_medium=partners_offer&utm_campaign=discount" target="_blank" class="font_med">Подробности на сайте Nominal Techno</a>
+				</div>
+			</div>
+		</div>-->
+		
+		<div class="org_case goblack">
+			<div class="org_case_block">
+				<div class="org_case_block_logo">
+					<img src="img/logo_hh_white.svg">
+				</div>
+				<div class="org_case_block_text">
+					<div class="org_case_block_subtitle">Организатор</div>
+					<div class="org_case_block_title font_med">Heads and Hands</div>
+					Один из лидеров заказной фудтех-разработки в&nbsp;России. Среди клиентов: Якитория, Zaka&nbsp;Zaka, Foodle, Ginza, Два&nbsp;берега, iGooods и&nbsp;другие.
+					<a href="https://handh.ru/" target="_blank" class="goblack font_med">handh.ru</a>
+				</div>
+				<div class="cle"></div>
+			</div>
+			<div class="org_case_line goblack"></div>
+			<div class="org_case_block">
+				<div class="org_case_block_logo">
+					<img src="img/logo_trinet_white.svg">
+				</div>
+				<div class="org_case_block_text">
+					<div class="org_case_block_subtitle">Соорганизатор</div>
+					<div class="org_case_block_title font_med">TRINET.WebFacultet</div>
+					TRINET.WebFacultet — event-подразделение TRINET.Group. С 2005 года создает ключевые digital-события в&nbsp;Москве и&nbsp;Санкт-Петербурге, организует конференции и&nbsp;форумы по маркетингу и&nbsp;бизнесу.
+					<a href="http://conf.trinet.ru/" target="_blank" class="goblack font_med">conf.trinet.ru</a>
+				</div>
+				<div class="cle"></div>
+			</div>
+		</div>
+		
+		<div class="partners_case" id="partners">
+			<div class="partners_case_title font_med">Партнеры</div>
+			<div class="partners_case_all">
+				<div class="partners_case_allblock">
+					<a href="https://swissam.ru/" target="_blank"><img src="img/partners/swissam.png"></a>
+					<!--Официальный партнер-->
+				</div>
+			</div>
+			<!--
+			<div class="partners_line"></div>
+			<div class="partners_case_title font_med">Сервисные партнеры</div>
+			<div class="partners_case_all">
+				<div class="partners_case_allblock">
+					<a href="https://xn--b1aeadnd4byajk8k.xn--80adxhks/" target="_blank"><img src="img/partners/vmsk.png"></a>
+					Видеопродакшн-партнер
+				</div>
+			</div>
+			-->
+			<div class="partners_line"></div>
+			<div class="partners_case_title font_med">Информационные партнеры</div>
+			<div class="partners_case_all">
+				<div class="partners_case_allblock">
+					<a href="https://kudago.com/" target="_blank"><img src="img/partners/kudago.png"></a>
+				</div>
+			</div>
+			<!--
+			<div class="partners_line"></div>
+			<div class="partners_case_title font_med">При поддержке</div>
+			<div class="partners_case_all">
+				<div class="partners_case_allblock">
+					<a href="https://elama.ru/" target="_blank"><img src="img/partners/elama.png"></a>
+				</div>
+			</div>
+			-->
+		</div>
+		
+		<div class="footer" id="contacts">
+			<div class="big_title font_med">Контакты</div>
+			<div class="footer_contacts">
+				<div class="footer_contacts_case">
+					Общие вопросы
+					<a href="mailto:event@mcomconf.ru" target="_blank" class="font_med">event@mcomconf.ru</a>
+				</div>
+				<div class="footer_contacts_case">
+					Информационное сотрудничество
+					<a href="mailto:pr@mcomconf.ru" target="_blank" class="font_med">pr@mcomconf.ru</a>
+				</div>
+				<div class="footer_contacts_case">
+					Вопросы участия и&nbsp;регистрации
+					<a href="mailto:reg@mcomconf.ru" target="_blank" class="font_med">reg@mcomconf.ru</a>
+				</div>
+				<div class="footer_contacts_case">
+					Партнерам и&nbsp;спонсорам
+					<a href="mailto:partner@mcomconf.ru" target="_blank" class="font_med">partner@mcomconf.ru</a>
+				</div>
+				<div class="cle"></div>
+			</div>
+			<div class="footer_line"></div>
+			<div class="footer_hash font_med">#mcomconf</div>
+			<div class="footer_hashtext">
+				MCOM Foodtech 2019 в&nbsp;социальных сетях:
+			</div>
+			<div class="footer_social">
+				<a href="https://www.instagram.com/mcomconf/" target="_blank"><img src="img/insta_footer.svg"></a>
+				<a href="https://www.facebook.com/mcomconf/" target="_blank"><img src="img/fb_footer.svg"></a>
+				<a href="https://www.youtube.com/channel/UCzAR99V_r75RT-09Aa5NE_w" target="_blank"><img src="img/yt_footer.svg"></a>
+			</div>
+		</div>
+	
+	</div>
+
+<script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+<tb-notification-widget  widget-id="90b28bca-1f25-87de-3020-01669c443052">
+</tb-notification-widget>
+	
+</body>
+</html>
