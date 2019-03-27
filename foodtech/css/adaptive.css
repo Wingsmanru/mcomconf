@@ -391,9 +391,14 @@
 		height: 225px;
 	}
 	
+	.mk_case_time{
+		float: none;
+		margin-bottom: 10px;
+	}
+	
 }
 
-@media (max-width : 360px) {
+@media (max-width : 420px) {
 	
 	.org_case_block_title{
 		font-size: 26px;

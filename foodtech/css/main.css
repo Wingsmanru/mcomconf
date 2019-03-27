@@ -649,6 +649,12 @@ img{
 	overflow: hidden;
 }
 
+.program_case_pic_forani img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 .program_case_pic_forani_ad{
 	position: absolute;
 	top: 50%;
@@ -1186,7 +1192,7 @@ img{
 
 .footer_social{
 	text-align: center;
-	width: 280px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 50px;
 }
@@ -1995,6 +2001,48 @@ img{
 	0% { height: 100px;}
 	50% { height: 120px;}
 	100% { height: 100px;}
+}
+
+/* MK */
+
+.mk_case{
+	width: 100%;
+	padding: 20px 30px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+
+.mk_case_time{
+	float: left;
+	width: 140px;
+}
+
+.mk_case_speaker_photo{
+	float: left;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-right: 20px;
+}
+
+.mk_case_speaker_photo img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.mk_case_speaker{
+	float: left;
+	margin-right: 40px;
+}
+
+.mk_theme{
+	margin-top: 10px;
 }
 
 /* --- PARTNERS --- */
